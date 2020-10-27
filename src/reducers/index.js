@@ -1,6 +1,11 @@
 import {combineReducers} from 'redux';
+import formReducer from './form';
+import listProducts from './product';  
 import uiReducer from './ui';
 const rootReducer = combineReducers({
-    ui: uiReducer,
+    form: formReducer,
+    listProducts: listProducts,
+    ui: uiReducer
+
 });
 export default rootReducer;

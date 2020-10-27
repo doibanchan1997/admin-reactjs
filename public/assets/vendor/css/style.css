@@ -357,7 +357,18 @@ body{
 	padding: 20px;
 	overflow-x: auto;
 }	 
-
+.card-footer{
+	padding: 15px 30px;
+	border-top: 1px solid var(--second-bg-color);
+	position: relative;
+	display: flex;
+	justify-content: end;
+	
+}
+.card-footer button {
+	padding: 8px 16px;
+	border-radius: 8px;
+}
 .row {
 	display: flex;
 	flex-wrap: wrap;
@@ -380,6 +391,7 @@ body{
 	.wraper {
 		margin-left: 0;
 	}
+	
 	.sidebar-expand .wraper {
 		margin-left: 0;
 	}
@@ -514,4 +526,43 @@ table th {
 	background: rgba(0,0,0,0.05);
 	border-radius: .25rem;
 	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1)
+}
+
+td .edit, td .delete, .addproduct{
+	padding: 8px 12px;
+	margin-right: 5px;
+	border-radius: 8px;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,1);
+	cursor: pointer;
+	border: none;
+	color: #fff;
+}
+.addproduct {
+	margin-bottom: 10px;
+}
+ label, input {
+ 	width: 100%;
+ }
+
+ .wraper.open-wraper-form {
+	position: absolute;
+	display: flex;
+	justify-content: start;
+	flex-direction: column;
+	background-color: rgba(0,0,0,0.5);
+	margin: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	overflow: auto
+}
+
+
+.close-wraper-form{
+	position: absolute;
+	visibility: hidden;
 }

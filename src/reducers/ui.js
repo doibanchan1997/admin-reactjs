@@ -1,22 +1,21 @@
-import { showSidebar } from '../actions/ui';
-import *as uiTypes from './../constants/ui';
-const initialState = {
-    showSidebar : false
+import *as uiConstant from './../constants/ui';
+const uiInitialState = {
+    showLoading: false
 }
-const reducer = (state = initialState, action) => {
+const reducerUi = (state = uiInitialState , action) => {
     switch (action.type) {
-        case uiTypes.SHOW_SIDEBAR:
+        case uiConstant.SHOW_LOADING:
             return {
                 ...state,
-                showSidebar: true,
+                showLoading: true
             }
-        case uiTypes.HIDDEN_SIDEBAE:
+        case uiConstant.HIDDEN_LOADING:
             return {
                 ...state,
-                showSidebar: false,
+                showLoading: false
             }
         default:
             return state
     }
 }
-export default reducer
+export default reducerUi;

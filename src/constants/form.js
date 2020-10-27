@@ -1,0 +1,4 @@
+export const SHOW_FORM = "SHOW_FORM";
+export const HIDDEN_FORM = "HIDDEN_FORM";
+export const CHANGE_TITLE_FORM = "CHANGE_TITLE_FORM";
+export const CHANGE_CONTENT_FORM = "CHANGE_CONTENT_FORM";
